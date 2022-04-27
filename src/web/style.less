@@ -1,4 +1,4 @@
-@color-red : #bf0808;
+@color-red: #bf0808;
 @color-blue: #0649af;
 @color-grey: #a8a8a847;
 
@@ -6,13 +6,13 @@
 @color-bg-light-blue: #c2c7ce61;
 
 :root {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-family: sans-serif;
   padding-bottom: 40px;
 }
 
 body {
-  margin: 0;
+  margin: 10px;
 }
 
 * + * {
@@ -38,12 +38,16 @@ h3 {
   margin: 4px 0 2px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   box-sizing: border-box;
   max-width: 100%;
 }
 
-input, select, button {
+input,
+select,
+button {
   padding: 4px;
 }
 
@@ -71,7 +75,9 @@ table th {
   text-align: left;
 }
 
-a, a.visited, a.hover {
+a,
+a.visited,
+a.hover {
   color: @color-blue;
 }
 
@@ -93,7 +99,7 @@ optgroup > option {
 
 .testnet {
   h2 {
-    .testnet-color
+    .testnet-color;
   }
 
   .address-ctrl {
@@ -108,7 +114,7 @@ optgroup > option {
 
 .mainnet {
   h2 {
-    .mainnet-color
+    .mainnet-color;
   }
 
   .address-ctrl {
@@ -130,13 +136,13 @@ optgroup > option {
   padding-bottom: 5px;
 
   table {
-    font-size: .8em;
+    font-size: 0.8em;
     color: #3c3c3c;
   }
 }
 
 .selector-ctrl pre {
-  display:inline-block;
+  display: inline-block;
   padding: 0px 0px;
   border: none;
 }
@@ -147,15 +153,13 @@ optgroup > option {
   background-color: @color-grey;
 
   .info {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
-
 
 .transfer-ctrl .rev-amount {
   width: 195px;
 }
-
 
 .custom-deploy-ctrl {
   .deploy-code {
