@@ -166,7 +166,7 @@ export const mainNet = {
     //   domain: "observer-eu.services.mainnet.rchain.coop",
     //   shardId: mainNetShardId,
     //   ...defaultPortsSSL,
-    // }
+    // },
   ],
 };
 
