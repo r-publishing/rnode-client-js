@@ -132,12 +132,12 @@ export const testNet = {
 // MAIN network
 
 const getMainNetUrls = (n) => ({
-  domain: `node${n}.root-shard.mainnet.rchain.coop`,
+  domain: `node${n}.mainnet.r-publishing.com`,
   shardId: mainNetShardId,
   ...defaultPortsSSL,
 });
 
-const mainnetHosts = range(30).map(getMainNetUrls);
+const mainnetHosts = range(5).map(getMainNetUrls);
 
 export const mainNet = {
   title: "RChain mainnet",
@@ -148,25 +148,25 @@ export const mainNet = {
   readOnlys: [
     // Load balancer (not gRPC) server for us, asia and eu servers
     {
-      domain: "observer.services.mainnet.rchain.coop",
+      domain: "observer.mainnet.r-publishing.com",
       shardId: mainNetShardId,
       https: 443,
     },
     {
-      domain: "observer-us.services.mainnet.rchain.coop",
+      domain: "observer2.mainnet.r-publishing.com",
       shardId: mainNetShardId,
       ...defaultPortsSSL,
     },
-    {
-      domain: "observer-asia.services.mainnet.rchain.coop",
-      shardId: mainNetShardId,
-      ...defaultPortsSSL,
-    },
-    {
-      domain: "observer-eu.services.mainnet.rchain.coop",
-      shardId: mainNetShardId,
-      ...defaultPortsSSL,
-    },
+    // {
+    //   domain: "observer-asia.services.mainnet.rchain.coop",
+    //   shardId: mainNetShardId,
+    //   ...defaultPortsSSL,
+    // },
+    // {
+    //   domain: "observer-eu.services.mainnet.rchain.coop",
+    //   shardId: mainNetShardId,
+    //   ...defaultPortsSSL,
+    // },
   ],
 };
 
