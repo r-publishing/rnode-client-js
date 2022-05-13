@@ -19,6 +19,7 @@ import { newRevAddress } from "@tgrospic/rnode-grpc-js";
 */
 
 const repoUrl = "https://github.com/r-publishing/rnode-client-js";
+const refUrl = "https://github.com/tgrospic/rnode-client-js";
 
 const mainCtrl = (st, effects) => {
   const { appCheckBalance, appTransfer, appSendDeploy, appPropose, log, warn } =
@@ -86,6 +87,11 @@ const mainCtrl = (st, effects) => {
       ".ctrl",
       "Demo client for RPublishing RNode ",
       m("a", { href: repoUrl, target: "_blank" }, repoUrl),
+      m(
+        ".ctrl",
+        "Forked originally from ",
+        m("a", { href: refUrl, target: "_blank" }, refUrl)
+      ),
       m("h1", "RPublishing RNode client testing page")
     ),
 
