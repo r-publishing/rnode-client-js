@@ -5,7 +5,7 @@ const defaultPortsSSL = { grpc: 40401, https: 443, httpAdmin: 40405 };
 // Shard IDs
 const defaultShardId = "root";
 const testNetShardId = "rpctestnet"; // not used until after v0.13.0-alpha
-const mainNetShardId = ""; // not used until HF2
+const mainNetShardId = "rchain-rpc"; // not used until HF2
 
 // Token name
 const tokenName = "RPC Token";
@@ -140,7 +140,7 @@ const getMainNetUrls = (n) => ({
 const mainnetHosts = range(5).map(getMainNetUrls);
 
 export const mainNet = {
-  title: "RChain mainnet",
+  title: "RPC mainnet",
   name: "mainnet",
   tokenName,
   tokenDecimal: defautTokenDecimal,
